@@ -13,4 +13,9 @@ public class DatabaseOperation {
     public String readDatabase(String key){
         return database.get(key);
     }
+
+    public boolean checkDatabase(String key){
+        if(database.containsKey(key)) return true;
+        return false;
+    }
 }
